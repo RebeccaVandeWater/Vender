@@ -30,4 +30,4 @@ export class Snack {
     }
 }
 
-// NOTE Turnary: you can add this to a button with string interpolation when setting HTML. This will allow an if statement to be read and implemented in order to enable or disable buttons. the ? asks if the conditional is true, then the colon marks two answers to the if statement. The left side is if it is true, the right side is if it is false.
+// NOTE Ternary: you can add this to a button with string interpolation when setting HTML. This will allow an if statement to be read and implemented in order to enable or disable buttons. the ? asks if the conditional is true, then the colon marks two answers to the if statement. The left side is if it is true, the right side is if it is false.

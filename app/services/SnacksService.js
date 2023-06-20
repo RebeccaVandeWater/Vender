@@ -18,6 +18,20 @@ class SnacksService {
             return
         }
 
+        if (AppState.money > foundSnack.price) {
+
+            AppState.money -= foundSnack.price
+
+            AppState.change += AppState.money
+
+            AppState.money = 0
+
+            console.log("Here is my change:", AppState.change)
+            console.log("Here is my vending machine money:", AppState.money)
+
+            return
+        }
+
 
         AppState.money -= foundSnack.price
     }

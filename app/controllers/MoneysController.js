@@ -6,10 +6,6 @@ function _drawMoneys() {
     setText('moneyAmount', AppState.money.toFixed(2))
 }
 
-function _drawChange() {
-    setText('changeAmount', AppState.change.toFixed(2))
-}
-
 
 export class MoneysController {
     constructor() {
@@ -23,12 +19,4 @@ export class MoneysController {
         _drawMoneys()
     }
 
-    // getChange() {
-    //     moneysService.giveChange()
-    //     _drawChange()
-    // }
 }
-
-// TODO Manipulate money amount in appState via MoneysService
-// TODO Draw money to screen
-// TODO Use listener to draw money any time it is manipulated

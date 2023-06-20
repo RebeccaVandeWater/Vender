@@ -1,6 +1,6 @@
 import { AppState } from "../AppState.js";
 import { snacksService } from "../services/SnacksService.js";
-import { setHTML } from "../utils/Writer.js";
+import { setHTML, setText } from "../utils/Writer.js";
 
 function _drawSnacks() {
     const snacks = AppState.snacks
@@ -12,6 +12,9 @@ function _drawSnacks() {
     setHTML('snacksAvailable', template)
 }
 
+function _drawChange() {
+    setText('changeAmount', AppState.change.toFixed(2))
+}
 
 export class SnacksController {
     constructor() {
@@ -19,6 +22,7 @@ export class SnacksController {
         // console.log("My Cheetos", AppState.snacks);
         _drawSnacks()
         AppState.on('money', _drawSnacks)
+        AppState.on('change', _drawChange)
     }
 
     buySnack(snackName) {
