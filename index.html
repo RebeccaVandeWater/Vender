@@ -16,36 +16,63 @@
 </head>
 
 <body>
-  <!-- SECTION -->
-  <header>
-    <nav class="navbar navbar-dark navbar-expand bg-dark text-light no-select">
-      <a class="navbar-brand ms-3" href="#">
-        <img src="https://codeworks.blob.core.windows.net/public/assets/img/cw-mark.png" height="45" alt=""
-          loading="lazy">
-        <span class="ms-2">Vender</span>
-      </a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
-        aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-        <div class="navbar-nav">
-          <!-- NAVLINKS -->
-          <a href="#/about" class="nav-link">About</a>
-        </div>
+  <!-- SECTION header -->
+  <header class="container-fluid">
+    <section class="row">
+      <div class="col-12 d-flex justify-content-between align-items-center p-3">
+        <span class="fs-3">Vendr</span>
+        <button onclick="app.MoneysController.addMoney()" class="btn btn-outline-dark fs-3">
+          Add .25
+        </button>
       </div>
-    </nav>
+    </section>
+
   </header>
 
-  <!-- SECTION -->
-  <main id="router-view">
-    <!-- PRIMARY VIEWPORT -->
+  <!-- SECTION main -->
+  <main class="container-fluid">
+
+    <!-- SECTION: Vending Machine Items -->
+    <section id="snacksAvailable" class="row my-4">
+      <!-- STUB Vending Machine Snacks -->
+      <!-- <div class="col-4 text-center fs-3">
+        <img class="img-fluid img-style"
+          src="https://images.unsplash.com/photo-1669056544004-96abfb7a5008?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80"
+          alt="cheetos">
+        <div class="d-flex justify-content-between align-items-center snack-text-style p-2">
+          <div>
+            <p>Cheetos</p>
+            <p>$3.25</p>
+
+          </div>
+          <div>
+            <button onclick="app.SnacksController.buySnack()" class="btn btn-outline-dark fs-5">
+              Buy
+            </button>
+
+          </div>
+        </div>
+      </div> -->
+    </section>
+
+    <!-- SECTION: Total Monies -->
+    <section class="row money-total-bg justify-content-end p-3">
+      <div class="col-6">
+        <p class="fs-3">
+          Total Money: <span id="moneyAmount">0.00</span>
+        </p>
+      </div>
+    </section>
+
+
+
+
   </main>
 
-  <!-- SECTION -->
-  <footer class="bg-dark text-light">
+  <!-- SECTION footer-->
+  <footer class="bg-danger text-light">
     <div class="text-center no-select">
-      <p class="mb-0"><small>Made with 💖 by CodeWorks</small></p>
+      <p class="mb-0"><small>Made with 💖 by Becca</small></p>
     </div>
   </footer>
 
