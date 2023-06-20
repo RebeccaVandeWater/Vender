@@ -16,5 +16,6 @@ header {
 }
 
 .snack-text-style {
-    background-color: aqua;
+    background-color: lightseagreen;
+    border: 1px solid black;
 }

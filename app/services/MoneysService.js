@@ -8,4 +8,4 @@ class MoneysService {
     }
 }
 
-export const moneysService = new MoneysService
+export const moneysService = new MoneysService()

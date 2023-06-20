@@ -15,7 +15,7 @@ export class MoneysController {
     }
 
     addMoney() {
-        console.log("Add Money click triggered")
+        // console.log("Add Money click triggered")
         moneysService.addMoney()
         _drawMoneys()
     }
