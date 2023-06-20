@@ -21,6 +21,8 @@ class ObservableAppState extends EventEmitter {
 
   money = 0
 
+  change = 0
+
   // NOTE Used to load initial data
   init() {
 

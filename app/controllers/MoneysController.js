@@ -3,8 +3,11 @@ import { moneysService } from "../services/MoneysService.js"
 import { setText } from "../utils/Writer.js"
 
 function _drawMoneys() {
-
     setText('moneyAmount', AppState.money.toFixed(2))
+}
+
+function _drawChange() {
+    setText('changeAmount', AppState.change.toFixed(2))
 }
 
 
@@ -19,6 +22,11 @@ export class MoneysController {
         moneysService.addMoney()
         _drawMoneys()
     }
+
+    // getChange() {
+    //     moneysService.giveChange()
+    //     _drawChange()
+    // }
 }
 
 // TODO Manipulate money amount in appState via MoneysService

@@ -10,12 +10,13 @@ header {
 }
 
 .img-style {
-    height: 15rem;
-    width: 15rem;
+    height: 20rem;
+    width: 20rem;
     object-fit: cover;
 }
 
 .snack-text-style {
     background-color: lightseagreen;
     border: 1px solid black;
+    width: 20rem;
 }

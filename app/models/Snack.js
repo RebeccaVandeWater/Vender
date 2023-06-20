@@ -9,7 +9,7 @@ export class Snack {
 
     get snacksTemplate() {
         return /*html*/`
-        <div class="col-4 text-center fs-3">
+        <div class="col-md-3 col-6 text-center fs-3 d-flex flex-column align-items-center my-2">
             <img class="img-fluid img-style"
             src="${this.imgUrl}"
             alt="${this.name}">

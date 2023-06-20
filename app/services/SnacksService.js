@@ -18,6 +18,7 @@ class SnacksService {
             return
         }
 
+
         AppState.money -= foundSnack.price
     }
 }
